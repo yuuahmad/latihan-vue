@@ -1,6 +1,10 @@
 <script setup>
 // setup pertama
 import { reactive, ref } from "vue";
+import gambarPertama from "/src/assets/images/satu.png";
+import gambarKedua from "/src/assets/images/tiga.png";
+import gambarKetiga from "/src/assets/images/mobile-app.png";
+
 const keteranganBagianKeempats = ref([
   {
     ikon: "fa-solid fa-recycle",
@@ -21,21 +25,21 @@ const keteranganBagianKeempats = ref([
 
 const layananWeloves = ref([
   {
-    gambar: "/src/assets/images/satu.png",
+    gambar: gambarPertama,
     judul: "Skincare Waste Management Service",
     keterangan:
       "Sistem manajemen pengelolaan sampah skincare yang bertanggung jawab dengan berlandaskan kolaborasi, inovasi dan teknologi dalam rangka mengurangi jumlah timbunan sampah yang berakhir di TPA.",
     ke: "tidak ada",
   },
   {
-    gambar: "/src/assets/images/tiga.png",
+    gambar: gambarKedua,
     judul: "Skincare Waste Dropbox",
     keterangan:
       "Layanan pengumpulan sampah kemasan skincare dimana konsumen dapat menyetorkan sampah di lokasi titik Drop Box Welove terdekat untuk mendukung upaya kolaborasi peningkatan pengelolaan sampah dan daur ulang yang diinisiasi oleh sektor industri.",
     ke: "tidak ada",
   },
   {
-    gambar: "/src/assets/images/mobile-app.png",
+    gambar: gambarKetiga,
     judul: "Skincare Marketplace App",
     keterangan:
       "Sistem daur ulang yang terintegrasi dengan aplikasi untuk mempermudah masyarakat dalam pemilihan tempat pembuangan sampah kemasan skincare yang tepat dan menukar point sampah kemasan skincare menjadi skincare baru.",
@@ -120,8 +124,8 @@ const layananWeloves = ref([
       >
         <font-awesome-icon
           :icon="keteranganBagianKeempat.ikon"
-          color="grey"
-          class="h-16 place-self-center"
+          color="gray"
+          class="h-12 justify-self-center md:justify-self-end md:pr-6"
         />
         <div class="col-span-3 py-2">
           <div class="text-main2">{{ keteranganBagianKeempat.judul }}</div>
