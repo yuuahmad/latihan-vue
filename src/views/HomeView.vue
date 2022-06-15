@@ -21,14 +21,14 @@ const keteranganBagianKeempats = ref([
 
 const layananWeloves = ref([
   {
-    gambar: "/src/assets/images/1.png",
+    gambar: "/src/assets/images/satu.png",
     judul: "Skincare Waste Management Service",
     keterangan:
       "Sistem manajemen pengelolaan sampah skincare yang bertanggung jawab dengan berlandaskan kolaborasi, inovasi dan teknologi dalam rangka mengurangi jumlah timbunan sampah yang berakhir di TPA.",
     ke: "tidak ada",
   },
   {
-    gambar: "/src/assets/images/3.png",
+    gambar: "/src/assets/images/tiga.png",
     judul: "Skincare Waste Dropbox",
     keterangan:
       "Layanan pengumpulan sampah kemasan skincare dimana konsumen dapat menyetorkan sampah di lokasi titik Drop Box Welove terdekat untuk mendukung upaya kolaborasi peningkatan pengelolaan sampah dan daur ulang yang diinisiasi oleh sektor industri.",
@@ -143,7 +143,7 @@ const layananWeloves = ref([
       >
         <img
           :src="layananWelove.gambar"
-          alt=""
+          :alt="layananWelove.judul"
           class="sm:h-96 h-64 w-full object-cover bg-white rounded-t-3xl sm:rounded-l-3xl sm:rounded-tr-none md:rounded-bl-none md:rounded-t-3xl"
         />
         <div class="place-self-center">
