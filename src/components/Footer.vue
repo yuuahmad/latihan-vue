@@ -10,7 +10,7 @@
       <div class="bg-white bg-opacity-90 rounded-full">
         <img
           class="w-32 lg:w-44"
-          src="/src/assets/images/logo welove.png"
+          src="/src/assets/images/logo-welove.png"
           alt="logo welove"
         />
       </div>

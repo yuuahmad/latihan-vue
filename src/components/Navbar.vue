@@ -27,7 +27,7 @@ const daftarMenuNavbars = ref([
       <div class="flex items-center">
         <img
           class="w-12"
-          src="/src/assets/images/logo welove.png"
+          src="/src/assets/images/logo-welove.png"
           alt="logo welove"
         />
         <div class="capitalize text-2xl text-green-800 font-semibold">

@@ -1,6 +1,5 @@
 <template id="app">
   <div class="">
-    <!-- <LatihanVue></LatihanVue> -->
     <Navbar></Navbar>
     <router-view></router-view>
     <Footer></Footer>
@@ -10,12 +9,11 @@
 <script>
 import { BeakerIcon } from "@heroicons/vue/solid";
 import HelloWorld from "./components/HelloWorld.vue";
-import LatihanVue from "./components/LatihanVue.vue";
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
-  components: { BeakerIcon, HelloWorld, LatihanVue, Navbar, Footer },
+  components: { BeakerIcon, HelloWorld, Navbar, Footer },
 };
 </script>
 
