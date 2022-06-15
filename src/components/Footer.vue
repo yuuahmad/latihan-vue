@@ -2,7 +2,7 @@
 
 <template>
   <!-- div hanya untuk background -->
-  <div class="bg-lime-600 py-10 text-white p-">
+  <div class="bg-lime-700 py-10 text-white p-">
     <div
       class="grid grid-cols-1 sm:grid-cols-2 sm:place-items-center md:grid-cols-5 md:place-items-start place-items-center container px-5 sm:mx-auto gap-5"
     >

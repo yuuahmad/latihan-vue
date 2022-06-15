@@ -18,6 +18,30 @@ const keteranganBagianKeempats = ref([
     text: "Mengedukasi lebih banyak remaja dan masyarakat luas dalam pengelolaan sampah kemasan skincare",
   },
 ]);
+
+const layananWeloves = ref([
+  {
+    gambar: "/src/assets/images/1.png",
+    judul: "Skincare Waste Management Service",
+    keterangan:
+      "Sistem manajemen pengelolaan sampah skincare yang bertanggung jawab dengan berlandaskan kolaborasi, inovasi dan teknologi dalam rangka mengurangi jumlah timbunan sampah yang berakhir di TPA.",
+    ke: "tidak ada",
+  },
+  {
+    gambar: "/src/assets/images/3.png",
+    judul: "Skincare Waste Dropbox",
+    keterangan:
+      "Layanan pengumpulan sampah kemasan skincare dimana konsumen dapat menyetorkan sampah di lokasi titik Drop Box Welove terdekat untuk mendukung upaya kolaborasi peningkatan pengelolaan sampah dan daur ulang yang diinisiasi oleh sektor industri.",
+    ke: "tidak ada",
+  },
+  {
+    gambar: "/src/assets/images/mobile-app.png",
+    judul: "Skincare Marketplace App",
+    keterangan:
+      "Sistem daur ulang yang terintegrasi dengan aplikasi untuk mempermudah masyarakat dalam pemilihan tempat pembuangan sampah kemasan skincare yang tepat dan menukar point sampah kemasan skincare menjadi skincare baru.",
+    ke: "tidak ada",
+  },
+]);
 </script>
 
 <template>
@@ -27,7 +51,7 @@ const keteranganBagianKeempats = ref([
   >
     <img
       class="h-96 sm:h-full lg:h-96 w-full object-cover object-center sm:order-last rounded-b-3xl sm:rounded-3xl"
-      src="/src/assets/images/gambardepan-welove.jpg"
+      src="/src/assets/images/gambar-depan-welove.jpg"
       alt=" gambar depan welove"
     />
     <div class="px-5">
@@ -107,17 +131,46 @@ const keteranganBagianKeempats = ref([
     </div>
   </div>
   <!-- ini bagian kelima (layanan welove) -->
-  <div class="my-10 bg-lime-100">
-    <!-- div untuk container -->
-    <div class="sm:container sm:mx-auto py-10 px-5">
-      <div class="text-main">welove</div>
-      <div>
-        Welove bergerak pada bidang jasa pengelolaan sampah kemasan skincare.
-        Dengan Visi menjadi layanan pengelolaan sampah kemasan skincare yang
-        tepat bagi masyarakat dan meningkatkan nilai ekonomi sampah kemasan
-        skincare, Welove memberikan layanan pengelolaan sampah skincare dan
-        menghubungkan konsumen dengan perusahaan penghasil produk.
+  <div class="my-10 bg-lime-100 py-3">
+    <div class="text-main text-center">layanan welove</div>
+    <!-- bagian looping -->
+    <div class="grid grid-cols-1 md:grid-cols-3">
+      <!-- ini adalah bagian card -->
+      <div
+        class="bg-lime-700 my-3 mx-3 text-white rounded-3xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1"
+        v-for="layananWelove in layananWeloves"
+        :key="layananWelove"
+      >
+        <img
+          :src="layananWelove.gambar"
+          alt=""
+          class="sm:h-96 h-64 w-full object-cover bg-white rounded-t-3xl sm:rounded-l-3xl sm:rounded-tr-none md:rounded-bl-none md:rounded-t-3xl"
+        />
+        <div class="place-self-center">
+          <!-- judul utama -->
+          <div class="text-main2 text-center text-white py-2 px-5">
+            {{ layananWelove.judul }}
+          </div>
+          <!-- keterangan -->
+          <div class="px-5 pb-5 pt-2">{{ layananWelove.keterangan }}</div>
+        </div>
       </div>
+    </div>
+  </div>
+  <!-- langkah pertumbuhan welove -->
+  <div class="py-36">Langkah Pertumbuhan Welove</div>
+  <!-- komponen terakhir -->
+  <div class="px-5 pb-5 pt-2 text-center">
+    <div class="text-main md:px-20">
+      Ayo bersama ikuti dan sebarkan campaign #WeloveWesafeEarth, jadilah
+      penyelamat bumi bersama teman-teman anda!
+    </div>
+    <div
+      class="capitalize flex justify-center gap-x-3 text-main2 text-gray-700"
+    >
+      <div>welove</div>
+      <div>wecare</div>
+      <div>wesafe</div>
     </div>
   </div>
 </template>

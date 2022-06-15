@@ -9,10 +9,8 @@ function tampilkanMenu() {
 
 const daftarMenuNavbars = ref([
   { text: "beranda" },
-  { text: "tentang" },
   { text: "layanan" },
   { text: "blog & media" },
-  { text: "kontak" },
   { text: "join webinar" },
   { text: "download" },
 ]);
@@ -20,7 +18,9 @@ const daftarMenuNavbars = ref([
 
 <template>
   <!-- ini adalah div utama pada navbar -->
-  <div class="fixed inset-x-0 bg-white bg-opacity-80">
+  <div
+    class="fixed inset-x-0 bg-white bg-opacity-80 md:flex justify-between place-items-center pr-5"
+  >
     <!-- ini adalah div untuk navbar -->
     <div class="flex justify-between items-center px-5 py-2">
       <!-- tampilan bagian kiri -->
@@ -35,12 +35,27 @@ const daftarMenuNavbars = ref([
         </div>
       </div>
       <!-- tampilan kiri -->
-      <MenuIcon class="w-8 text-green-800" @click="tampilkanMenu"></MenuIcon>
+      <MenuIcon
+        class="w-8 md:hidden text-green-800"
+        @click="tampilkanMenu"
+      ></MenuIcon>
     </div>
 
     <!-- tampilan menu untuk tampilan mobile -->
     <!-- tampilan ini tertulis sendiri :) -->
-    <div v-if="menuTerlihat" class="flex-col">
+    <div v-if="menuTerlihat" class="flex-col md:hidden">
+      <div
+        class="capitalize text-lg font-semibold text-center py-1"
+        v-for="daftarMenuNavbar in daftarMenuNavbars"
+        :key="daftarMenuNavbar"
+      >
+        {{ daftarMenuNavbar.text }}
+      </div>
+    </div>
+
+    <!-- tampilan menu untuk tampilan desktop -->
+    <!-- juga tertulis sendiri :) -->
+    <div class="gap-4 hidden md:flex">
       <div
         class="capitalize text-lg font-semibold text-center py-1"
         v-for="daftarMenuNavbar in daftarMenuNavbars"
