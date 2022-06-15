@@ -27,7 +27,7 @@ const keteranganBagianKeempats = ref([
   >
     <img
       class="h-96 sm:h-full lg:h-96 w-full object-cover object-center sm:order-last rounded-b-3xl sm:rounded-3xl"
-      src="/src/assets/images/gambar depan welove.jpg"
+      src="/src/assets/images/gambardepan-welove.jpg"
       alt=" gambar depan welove"
     />
     <div class="px-5">
